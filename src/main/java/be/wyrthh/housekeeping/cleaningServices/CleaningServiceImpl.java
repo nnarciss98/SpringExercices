@@ -1,4 +1,4 @@
-package be.wyrthh.housekeeping.services;
+package be.wyrthh.housekeeping.cleaningServices;
 
 public class CleaningServiceImpl implements CleaningService {
 
@@ -12,4 +12,9 @@ public class CleaningServiceImpl implements CleaningService {
         this.cleaningTool = cleaningTool;
         return this;
     }
+
+    public void cleaning(){
+        cleaningTool.use();
+    }
+
 }
